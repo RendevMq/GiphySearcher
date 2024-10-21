@@ -1,0 +1,8 @@
+<aside class="aside" [class.aside-open]="isOpen" (click)="$event.stopPropagation()">
+  <nav class="aside-nav">
+    <app-history 
+      [history]="historyData" 
+      (repeatSearch)="onHistorySearch($event)">
+    </app-history>
+  </nav>
+</aside>

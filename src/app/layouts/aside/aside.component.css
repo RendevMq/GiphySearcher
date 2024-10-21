@@ -1,0 +1,26 @@
+.aside {
+  width: 250px;
+  background-color: var(--aside-background-color);
+  height: calc(100vh - var(--navbar-height));
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.aside-nav {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .aside {
+    transform: translateX(-100%);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .aside-open {
+    transform: translateX(0);
+  }
+}

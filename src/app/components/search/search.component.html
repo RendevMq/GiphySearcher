@@ -1,0 +1,10 @@
+<div class="search-container">
+    <input
+      type="text"
+      [(ngModel)]="query"
+      placeholder="Buscar GIFs..."
+      (keydown.enter)="onSearch()"  
+    />
+    <button (click)="onSearch()">Buscar</button> 
+  </div>
+  

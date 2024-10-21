@@ -1,0 +1,45 @@
+/* global.css */
+
+/* Variables de colores */
+
+
+:root {
+    --navbar-height: 60px;  /* Definimos la altura del navbar */
+  
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+    --text-color: #150707;
+    --navbar-background-color: #343A40;
+    --aside-background-color: #454D55;
+  
+    /* Tipografía */
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 18px;
+    --font-size-small: 14px;
+  
+    /* Espaciados */
+    --padding-base: 1rem;
+    --margin-base: 1rem;
+  
+    /* Bordes */
+    --border-radius: 8px;
+    --border-color: #e0e0e0;
+  }
+  
+  /* Estilos globales */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+  }
+  

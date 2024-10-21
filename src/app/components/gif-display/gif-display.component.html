@@ -1,0 +1,16 @@
+<div class="gif-container">
+  <div *ngFor="let gif of gifs" class="gif-item">
+    <iframe [src]="getSanitizedUrl(gif.embedUrl)" frameborder="0"></iframe> <!-- Sanitiza la URL -->
+    <p>{{ gif.title }}</p>
+    <a [href]="gif.url" target="_blank">Ver en Giphy</a>
+  </div>
+</div>
+
+<!-- <div class="gif-container">
+    <div *ngFor="let gif of gifs" class="gif-item">
+      <iframe [src]="gif.embedUrl" frameborder="0"></iframe>
+      <p>{{ gif.title }}</p>
+      <a [href]="gif.url" target="_blank">Ver en Giphy</a>
+    </div>
+</div> -->
+  

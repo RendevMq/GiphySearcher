@@ -1,0 +1,47 @@
+.gif-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--padding-base);
+}
+
+
+@media (max-width: 1024px) {
+  .gif-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gif-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gif-item {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.gif-item iframe {
+  width: 100%;
+}
+
+.gif-item p {
+  padding: var(--padding-base);
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+.gif-item a {
+  display: block;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.gif-item a:hover {
+  color: var(--secondary-color);
+}

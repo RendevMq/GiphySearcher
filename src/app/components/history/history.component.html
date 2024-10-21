@@ -1,0 +1,9 @@
+<div class="history-container">
+  <h3>Historial de búsquedas</h3>
+  <hr>
+  <ul>
+    <li *ngFor="let query of history" (click)="onSearch(query)">
+      {{ query }}
+    </li>
+  </ul>
+</div>

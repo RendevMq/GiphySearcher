@@ -1,0 +1,15 @@
+<div class="layout-container" (click)="handleClick($event)">
+  <app-navbar (toggleMenu)="toggleAside()"></app-navbar>
+  <div class="content-wrapper">
+    <app-aside 
+      [isOpen]="isAsideOpen"
+      [historyData]="history"
+      (menuSelect)="closeAside()"
+      (searchFromHistory)="handleHistorySearch($event)">
+    </app-aside>
+    <main class="main-content" [class.overlay-active]="isAsideOpen">
+      <app-search (search)="searchGifs($event)"></app-search>
+      <app-gif-display [gifs]="gifs"></app-gif-display>
+    </main>
+  </div>
+</div>
