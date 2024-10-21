@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
 
   handleHistorySearch(query: string) {
     this.searchGifs(query);
-    this.closeAside(); // Cerrar el aside después de buscar en móvil
+    this.closeAside(); // Cerrar el aside después de buscar en movil
   }
 
   addToHistory(query: string) {
