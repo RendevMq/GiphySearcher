@@ -1,8 +1,16 @@
 <nav class="navbar">
-  <button class="menu-toggle" (click)="onToggleMenu($event)" *ngIf="isMobile">
-    <i class="fas fa-bars"></i>
-  </button>
-  <div class="navbar-brand">
-    <img src="https://cdn.worldvectorlogo.com/logos/giphy-logo-1.svg" alt="">
-    GIPHY SEARCHER</div>
+  <div class="navbar-left">
+    <button class="menu-toggle" (click)="onToggleMenu($event)" *ngIf="isMobile">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="navbar-brand">
+      <img src="https://cdn.worldvectorlogo.com/logos/giphy-logo-1.svg" alt="">
+      GIPHY SEARCHER
+    </div>
+  </div>
+  
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="github-btn">
+    <i class="fab fa-github"></i>
+    <span class="button-text">Source Code</span>
+  </a>
 </nav>

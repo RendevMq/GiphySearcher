@@ -32,10 +32,10 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
       // Para usar el servicio mock durante desarrollo(LIMITE DE PETICIONES POR LA API DE GIPHY):
-      // { provide: GiphyService, useClass: MockGiphyService }
+      { provide: GiphyService, useClass: MockGiphyService }
 
       // Cambiar al servicio real:
-      { provide: GiphyService, useClass: GiphyService }
+      // { provide: GiphyService, useClass: GiphyService }
   ],
   bootstrap: [AppComponent]
 })
